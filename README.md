@@ -10,6 +10,9 @@ python3, numpy, scipy, pandas, h5py, numpy-quaternion, matplotlib, torch, torchv
 tqdm, scikit-learn
 
 ### Data 
+
+For the ECE590 project, the data and pretrained models are stored in the /data/imu-ml-security-project directory.
+
 The dataset used by this project is collected using an [App for Google Tango Device](https://drive.google.com/file/d/1xJHZ_O-uDSJdESJhZ3Kpy86kWaGX9K2g/view) and an [App for any Android Device](https://drive.google.com/file/d/1BVhfKE6FEL9YRO1WQCoRPgLtVixDbHMt/view), and pre_processed to the data format specified [here](https://ronin.cs.sfu.ca/README.txt) 
 Please refer to our paper for more details on data collection.
 
@@ -19,7 +22,7 @@ Optionally, you can write a custom dataloader (E.g: soure/data_ridi.py) to load 
 
 ### Usage:
 1. Clone the repository.
-2. (Optional) Download the dataset and the pre-trained models<sup>1</sup> from [HERE](https://doi.org/10.20383/102.0543). 
+2. (Optional) Download the dataset and the pre-trained models<sup>1</sup> from [HERE](https://doi.org/10.20383/102.0543). For the ECE590 project, the data and pretrained models are stored in the /data/imu-ml-security-project directory.
 3. Position Networks 
     1. To train/test **RoNIN ResNet** model:
         * run ```source/ronin_resnet.py``` with mode argument. Please refer to the source code for the full list of command 
