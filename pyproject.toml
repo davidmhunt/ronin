@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ronin"
+version = "0.1.0"
+description = ""
+authors = ["Sachini Herath <sachini.mc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+scipy = "^1.14.1"
+pandas = "^2.2.3"
+h5py = "^3.12.1"
+numpy = "^2.0.0"
+numpy-quaternion = "^2024.0.2"
+matplotlib = "^3.9.2"
+torch = "^2.5.0"
+torchvision = "^0.20.0"
+tensorboardx = "^2.6.2.2"
+plyfile = "^1.1"
+tqdm = "^4.66.5"
+scikit-learn = "^1.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
