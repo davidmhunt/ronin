@@ -9,6 +9,34 @@
 python3, numpy, scipy, pandas, h5py, numpy-quaternion, matplotlib, torch, torchvision, tensorboardX, numba, plyfile, 
 tqdm, scikit-learn
 
+### Installing Dependencies
+
+This fork uses [Poetry](https://python-poetry.org) for dependency management and resolution.
+
+After cloning the repository to your home folder on the edge server, you can install a new poetry environment using the specified dependencies with the following command:
+
+```
+poetry install
+```
+
+**Make sure you are inside of the project directory, such that `pyproject.toml` is available at the directory root!**
+
+After the installation is complete you can activate the virtual environment:
+
+```
+poetry shell
+```
+
+To verify that the shell has been activated, check the location of the currently aliased python executable:
+
+```
+which python
+```
+
+The result of the command should include "pypoetry" in the path.
+
+You can exit the virtual environment shell with `exit`.
+
 ### Data 
 
 For the ECE590 project, the data and pretrained models are stored in the /data/imu-ml-security-project directory.
