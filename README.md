@@ -83,20 +83,20 @@ If you are using poetry over an ssh connection or get an error in the following 
 ```
 export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 ```
-### Installing odometry (with torch)
+### Installing ronin (with torch)
 If your machine supports it Navigate to the odometry foler (this folder) and execute the following command
 
 ```
-poetry install --with submodules,torch
+poetry install --with torch
 ```
 
 
 
-### Installing odometry (with torch separately)
-If your machine supports it Navigate to the odometry foler (this folder) and execute the following command
+### Installing ronin (with torch separately)
+If your machine supports it Navigate to the ronin foler (this folder) and execute the following command
 
 ```
-poetry install --with submodules
+poetry install --without submodules
 ```
 
 Follow the following instructions to install the correct version of pytorch for your system.
@@ -105,9 +105,9 @@ Follow the following instructions to install the correct version of pytorch for 
 ```
 pip3 install torch torchvision torchaudio torchsummary
 ```
-2. Navigate to the odometry folder
+2. Navigate to the ronin folder
 ```
-cd odometry
+cd ronin
 ```
 3. Start a poetry shell
 ```
@@ -121,14 +121,14 @@ pip3 install torch torchvision torchaudio
 ```
 exit
 ```
-#### Updating Odometry
+#### Updating ronin
 If the pyproject.toml file is updated, the poetry installation must also be updated. Use the following commands to update the version of poetry
 ```
 poetry lock --no-update
 poetry install
 ```
 
-### Usage:
+# Usage (old instructions):
 1. Clone the repository.
 2. (Optional) Download the dataset and the pre-trained models<sup>1</sup> from [HERE](https://doi.org/10.20383/102.0543). For the ECE590 project, the data and pretrained models are stored in the /data/imu-ml-security-project directory.
 3. Position Networks 
