@@ -19,6 +19,8 @@ tensorboardx = "^2.6.2.2"
 plyfile = "^1.1"
 tqdm = "^4.66.5"
 scikit-learn = "^1.5.2"
+ipykernel = "^6.29.5"
+jupyterlab = "^4.2.5"
 
 
 [build-system]
