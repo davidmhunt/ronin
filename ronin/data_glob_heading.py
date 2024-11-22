@@ -9,9 +9,9 @@ import quaternion
 from scipy.ndimage import gaussian_filter1d
 from torch.utils.data import Dataset
 
-from math_util import orientation_to_angles
-from data_glob_speed import GlobSpeedSequence
-from data_utils import load_cached_sequences
+from ronin.math_util import orientation_to_angles
+from ronin.data_glob_speed import GlobSpeedSequence
+from ronin.data_utils import load_cached_sequences
 
 
 class HeadingSequence(GlobSpeedSequence):

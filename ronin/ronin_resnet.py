@@ -11,10 +11,10 @@ from scipy.interpolate import interp1d
 from tensorboardX import SummaryWriter
 from torch.utils.data import DataLoader
 
-from data_glob_speed import *
-from transformations import *
-from metric import compute_ate_rte
-from model_resnet1d import *
+from ronin.data_glob_speed import *
+from ronin.transformations import *
+from ronin.metric import compute_ate_rte
+from ronin.model_resnet1d import *
 
 _input_channel, _output_channel = 6, 2
 _fc_config = {'fc_dim': 512, 'in_dim': 7, 'dropout': 0.5, 'trans_planes': 128}
@@ -78,7 +78,6 @@ def get_dataset(root_dir, data_list, args, **kwargs):
     if args.dataset == 'ronin':
         seq_type = GlobSpeedSequence
     elif args.dataset == 'ridi':
-        from data_ridi import RIDIGlobSpeedSequence
         seq_type = RIDIGlobSpeedSequence
     dataset = StridedSequenceDataset(
         seq_type, root_dir, data_list, args.cache_path, args.step_size, args.window_size,

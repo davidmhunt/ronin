@@ -12,11 +12,11 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
 
-from model_temporal import LSTMSeqNetwork, BilinearLSTMSeqNetwork, TCNSeqNetwork
-from utils import load_config, MSEAverageMeter
-from data_glob_speed import GlobSpeedSequence, SequenceToSequenceDataset
-from transformations import ComposeTransform, RandomHoriRotateSeq
-from metric import compute_absolute_trajectory_error, compute_relative_trajectory_error
+from ronin.model_temporal import LSTMSeqNetwork, BilinearLSTMSeqNetwork, TCNSeqNetwork
+from ronin.utils import load_config, MSEAverageMeter
+from ronin.data_glob_speed import GlobSpeedSequence, SequenceToSequenceDataset
+from ronin.transformations import ComposeTransform, RandomHoriRotateSeq
+from ronin.metric import compute_absolute_trajectory_error, compute_relative_trajectory_error
 
 '''
 Temporal models with loss functions in global coordinate frame

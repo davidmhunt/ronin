@@ -5,7 +5,7 @@ import pandas
 import numpy as np
 import quaternion
 
-from data_utils import CompiledSequence
+from ronin.data_utils import CompiledSequence
 
 
 class RIDIGlobSpeedSequence(CompiledSequence):

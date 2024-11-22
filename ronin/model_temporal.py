@@ -4,7 +4,7 @@ import os.path as osp
 import torch
 from torch.autograd import Variable
 
-from tcn import TemporalConvNet
+from ronin.tcn import TemporalConvNet
 
 
 class LSTMSeqNetwork(torch.nn.Module):

@@ -12,12 +12,12 @@ from torch.utils.data import DataLoader
 
 sys.path.append(osp.join(osp.dirname(osp.abspath(__file__)), '..'))
 
-from model_temporal import LSTMSeqNetwork
-from data_glob_heading import HeadingSequence, HeadingDataset
-from transformations import ComposeTransform, RandomHoriRotateSeq
-from metric import compute_heading_error
-from math_util import adjust_angle_array
-from utils import load_config
+from ronin.model_temporal import LSTMSeqNetwork
+from ronin.data_glob_heading import HeadingSequence, HeadingDataset
+from ronin.transformations import ComposeTransform, RandomHoriRotateSeq
+from ronin.metric import compute_heading_error
+from ronin.math_util import adjust_angle_array
+from ronin.utils import load_config
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 _input_channel, _output_channel = 6, 2

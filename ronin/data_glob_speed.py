@@ -8,7 +8,7 @@ import quaternion
 from scipy.ndimage import gaussian_filter1d
 from torch.utils.data import Dataset
 
-from data_utils import CompiledSequence, select_orientation_source, load_cached_sequences
+from ronin.data_utils import CompiledSequence, select_orientation_source, load_cached_sequences
 
 
 class GlobSpeedSequence(CompiledSequence):

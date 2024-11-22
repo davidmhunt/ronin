@@ -10,7 +10,7 @@ import warnings
 from os import path as osp
 import sys
 
-from math_util import gyro_integration
+from ronin.math_util import gyro_integration
 
 """
 We use two levels of hierarchy for flexible data loading pipeline:
